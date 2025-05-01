@@ -3,6 +3,8 @@
     import Pomodoro from "$lib/pomodoro.svelte";
     import DailyQuote from "$lib/quote.svelte";
     import FocusStreak from "$lib/focus-streak.svelte";
+    import WeatherWidget from "$lib/weather.svelte";
+    import ClassCountdown from "$lib/class-countdown.svelte";
     import "../app.css";
 
     let title = "FocusBoard";
@@ -44,6 +46,8 @@
 
 <main>
     <h1>{title}</h1>
+    <WeatherWidget />
+    <ClassCountdown />
     <DailyQuote />
     <FocusStreak {todos} />
 
